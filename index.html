@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Course Home Page</title>
+    <meta name="description" content="Main WDD 231 Homepage for Jennifer Malan's Coursework">
+    <meta  name="author" content="Jennifer Malan">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/rocket.svg" alt="rocket logo"> 
+        <span>Jennifer Malan | WDD 231</span>
+         <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" target="blank" class="current">Home</a></li>
+            <li><a href="#" target="blank">Chamber Project</a></li>
+            <li><a href="#" target="blank">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p class="aboutme">My name is Jennifer Malan and I live in beautiful Idaho.  I am married with 4 children. I love to code, dabble in graphic design, and read. I have earned certificates in Social Media Marketing and Graphic Design Fundamentals. I am now working on a certificate in Web and Computer Programming and thoroughly enjoying my classes. I am not sure where they will take me yet, but I am having fun. I am currently serving as a Relief Society teacher in my ward. </p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profilepic.webp" alt="studentphoto" class="profilepic">
+        </section>
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="socialmedia">
+            <a href="https://github.com/jmalan210" target="blank"><img src="images/github.svg" alt="github" class="icon"></a>
+            <a href="https://www.linkedin.com/in/jennifer-malan-766361298/" target="blank"><img src="images/linkedin.svg" alt="linkedin" class="icon"></a>
+            <a href="https://www.instagram.com/jenm210/" target="blank"><img src="images/instagram.svg" alt="instagram" class="icon"></a>
+            <a href="https://www.facebook.com/jennifer.malan/" target="blank"><img src="images/facebook.svg" alt="facebook" class="icon"></a>
+        </div>
+        <p> &copy; <span id="currentyear"></span> Jennifer Malan | Idaho, USA </p>
+        <p id="lastModified">last modified</p>
+    </footer>
+</body>
+</html>

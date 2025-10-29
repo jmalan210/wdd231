@@ -1,0 +1,62 @@
+@media only screen and (min-width: 38rem) {
+    
+/*************HEADER*******************/
+
+header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+
+}
+
+header span {
+    text-align: left;
+}
+
+/*************NAVIGATION*****************/
+
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-start;
+     gap: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    background-color: #eee;
+    border: solid 2px #eee;
+    border-radius: 10px
+  
+   
+}
+
+/**********************MAIN**************/
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+section {
+    border: 1px solid var(--teal);
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    grid-column:  1/3;
+}
+
+
+.certificate {
+    grid-column: 1/3;
+}
+
+}

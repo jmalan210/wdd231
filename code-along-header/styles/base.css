@@ -1,0 +1,130 @@
+/* color scheme 
+darkred
+teal #238080 */
+
+*{
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: #238080;
+}
+
+/* HAMBURGER NAVIGATION */
+
+.hamburger {
+    background:none;
+    border: none;
+    color: #238080;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7"
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navigation li {
+    list-style-type: none;
+    background-color: #ddd;
+}
+    
+.navigation a{
+    display: block;
+    text-decoration: none;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+
+}
+
+.navigation a:hover {
+    background-color:darkred;
+    color: white;
+}
+
+.navigation li.current {
+    background-color:darkred;
+    a{ color: white}
+}
+
+h1 {
+    margin-left: 10px;
+    color: #238080;
+}
+
+/* FOOTER */
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+.socialmedia {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.socialmedia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+}
+
+.socialmedia img {
+    width: 22px;
+    height: 22px;
+}
+
+.socialmedia a:hover {
+    background-color: #ddd;
+}
