@@ -83,9 +83,12 @@ const wddBtn = document.getElementById('wddcourses');
 const cseBtn = document.getElementById('csecourses');
 
 
-
-
 createCourseCard(courses);
+let creditSpan = document.createElement('span');
+creditSpan.setAttribute('class', 'creditspan');
+creditSpan.textContent = `There are ${getTotalCredits(courses)} credits listed above`;
+document.querySelector('.classes').appendChild(creditSpan);
+
 
 
 function createCourseCard(courses) {
@@ -100,7 +103,7 @@ function createCourseCard(courses) {
         let num = course.number;
         let title = course.title;
         let mark = course.completed;
-        let cred = course.credits
+        
         
        
         if (mark === true) {
@@ -120,18 +123,30 @@ function createCourseCard(courses) {
         card.appendChild(para);
         card.appendChild(paraTwo);
         document.querySelector('.classes').appendChild(card);
-
-    
-       
     })
    
 }
 
 
+function getTotalCredits(courses) {
+    let creditsArray = courses.map(course => course.credits)
+    let totalCredits = creditsArray.reduce((numCredits, currentSum) => {
+        return numCredits + currentSum
+    }, 0);
+    return totalCredits
+    // console.log(totalCredits)
+    }
 
 
 allBtn.addEventListener("click", () => {
     createCourseCard(courses);
+    let creditSpan = document.createElement('span')
+    creditSpan.setAttribute('class', 'creditspan')
+    creditSpan.textContent = `There are ${getTotalCredits(courses)} credits listed above`;
+    document.querySelector('.classes').appendChild(creditSpan);
+
+
+   
 })
 
 const wddCourses = courses.filter(course => course.subject === 'WDD');
@@ -139,9 +154,21 @@ const cseCourses = courses.filter(course => course.subject === 'CSE');
 
 wddBtn.addEventListener('click', () => {
     createCourseCard(wddCourses);
+    // let sumCredits = getTotalCredits(wddCourses);
+    // console.log(sumCredits);
+    let creditSpan = document.createElement('span')
+    creditSpan.setAttribute('class', 'creditspan')
+    creditSpan.textContent = `There are ${getTotalCredits(wddCourses)} credits listed above`;
+    document.querySelector('.classes').appendChild(creditSpan);
+
 })
 
 cseBtn.addEventListener('click', () => {
     createCourseCard(cseCourses);
+    let creditSpan = document.createElement('span')
+    creditSpan.setAttribute('class', 'creditspan')
+    creditSpan.textContent = `There are ${getTotalCredits(cseCourses)} credits listed above`;
+    document.querySelector('.classes').appendChild(creditSpan);
+
 })
 
