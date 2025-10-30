@@ -102,7 +102,7 @@ h1, h2 {
 
 main {
     display: grid;
-    grid-column: 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     padding-bottom: 10px;
     margin-left: 5px;
