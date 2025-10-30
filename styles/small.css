@@ -9,6 +9,7 @@
 
 *{
     box-sizing: border-box;
+    
 }
 
 /********************** HEADER*************************/
@@ -32,6 +33,7 @@ header span {
 header img {
     display: block;
     width:50px;
+    margin-left: 5px;
     
     
 }
@@ -76,7 +78,6 @@ header img {
     background-color: var(--teal);
     color: white;
 }
-
 .current {
     border: 2px solid var(--teal);
     border-radius: 10px;
@@ -101,19 +102,22 @@ h1, h2 {
 main {
     display: grid;
     grid-column: 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 main section {
     border: 2px solid var(--teal);
     border-radius: 10px;
-    margin-left: 5px;
 }
 
 
 .aboutme {
-    text-align: left;
-    padding-left: 5px;
+    text-align:justify;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: var(--text-font);
 }
 
@@ -125,12 +129,61 @@ main section {
     width: 200px;
     height: auto;
     border-radius: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
     
     
 }
 
+/***************WEB COURSES***************/
+
+.classnum {
+    display: inline;
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    text-align: center;
+}
+.certificate {
+    padding: 0 10px 10px;
+}
+
+
+.certificate button {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--teal);
+    color: white;
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+
+.certificate section {
+    padding: 5px;
+    font-family: var(--text-font);
+    width: 15rem;
+}
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+
 /***************FOOTER******************/
+footer {
+    background-color: #ddd;
+    font-family: var(--text-font);
+    border-radius: 10px;
+    padding-bottom:5px;
+    padding-top: 5px;
+
+}
 
 div{
     margin-top: 20px;
