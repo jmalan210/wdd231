@@ -1,0 +1,71 @@
+:root {
+    --heading-font: "Prata", serif;
+    --body-font: "Roboto", sans-serif;
+    --dark-blue: #25344f;
+    --slate-grey: #617891;
+    --white: rgb(253, 253, 253);
+    --dark-tan: #6f4d38;
+    --dark-red: #632024;
+}
+
+*{
+    box-sizing: border-box;
+    background-color: var(--dark-blue);
+    margin: 0 auto;
+}
+
+
+h1{
+    background-color: var(--white);
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    color: var(--dark-red);
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 5px;
+    border-bottom: 10px solid var(--dark-blue);
+}
+
+div {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
+    background-color: var(--dark-red);
+    padding: 10px;
+    margin: 0 15px 0 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(8, 8, 8, 0.5);
+}
+
+h2, p, .prophetcard {
+    background-color: var(--white);
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    margin-top: 5px;
+
+}
+
+p {
+    font-family: var(--body-font);
+    margin: 5px;
+}
+
+img {
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.prophetcard {
+    display: flex;
+    flex-direction: column;
+    border: 10px var(--slate-grey) solid;
+    border-radius: 15px;
+    margin: 10px;
+    display: block;
+    width: 380px;
+    box-shadow: 5px 5px 10px rgba(8, 8, 8, 0.5);
+}
