@@ -69,3 +69,11 @@ img {
     width: 380px;
     box-shadow: 5px 5px 10px rgba(8, 8, 8, 0.5);
 }
+
+footer {
+    text-align: center;
+    font-family: var(--body-font);
+    color: var(--white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
