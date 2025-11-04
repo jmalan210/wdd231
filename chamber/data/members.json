@@ -1,0 +1,75 @@
+{
+    "members": [
+        {
+            "name":"Hares and Hatters Bookshop",
+            "address":"200 S Main St, Ste G, Pocatello, ID 83204",
+            "phone number":"208-648-3727",
+            "url":"https://www.haresandhattersbookshop.com/",
+            "image":"images/haresandhatters.jpg",
+            "membership level": 1 
+            
+        },
+
+        {
+            "name":"BengalWorks Graphics",
+            "address":"470 W. Oak St, Pocatello, ID 83201",
+            "phone number":"208-242-3831",
+            "url":"https://www.bengalworks.com/",
+            "image":"images/bengalworks.jpg",
+            "membership level": 2 
+            
+        },
+
+        {
+            "name":"Jakers Bar and Grill",
+            "address":"2365 Via Caporatti Dr, Pocatello, ID 83201",
+            "phone number":"208-478-2000",
+            "url":"https://jakers.com/pocatello/",
+            "image":"images/jakers.jpg",
+            "membership level": 3 
+            
+        },
+
+        {
+            "name":"The Sodamix",
+            "address":"4185 Pole Line Rd, Pocatello, ID 83202",
+            "phone number":"208-417-0494",
+            "url":"https://www.thesodamix.com/",
+            "image":"images/thesodamix.jpg",
+            "membership level": 1
+            
+        }, 
+
+        {
+            "name":"Jeri's Jumbo's Cafe",
+            "address":"3122 Pole Line Rd, Pocatello, ID 83201",
+            "phone number":"208-237-2158",
+            "url":"https://www.jerisjumboscafe.com/",
+            "image":"images/jumbos.jpg",
+            "membership level": 2 
+            
+        },
+
+        {
+            "name":"Barrie's Ski and Sports",
+            "address":"624 Yellowstone Ave, Pocatello, ID 83201",
+            "phone number":"208-232-8996",
+            "url":"https://www.barriessports.com/",
+            "image":"images/barries.jpg",
+            "membership level": 3
+            
+        },
+
+        {
+            "name":"Goody's Deli & Pub",
+            "address":"905 S 5th Ave, Pocatello, ID 83201",
+            "phone number":"208-233-9210",
+            "url":"https://www.goodysdeli.com/",
+            "image":"images/goodys.jpg",
+            "membership level": 3
+            
+        }
+
+
+    ]
+}

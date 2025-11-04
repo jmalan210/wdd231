@@ -26,9 +26,10 @@
 
 h1{
     font-family: var(--heading-font);
-    font-size: 1.5rem;
     color: var(--midnight);
     text-align: center;
+    text-wrap: balance;
+    padding-right: 10px;
 }
 
 header {
@@ -40,7 +41,6 @@ header {
 
 header img {
     width: 100px;
-    padding-bottom:20px
 }
 
 /***************HAMBURGER BUTTON****************/
@@ -50,6 +50,7 @@ header img {
     border: none;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 5px;
 }
 
 .hamburger::before {

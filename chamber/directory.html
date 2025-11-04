@@ -8,9 +8,9 @@
     <meta name="description" content="A fictional Chamber of Commerce page for the city of Pocatello, ID authored by Jennifer Malan for WDD 231 at BYU=I.">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Pocatello Chamber of Commerce">
-    <meta propert="og:description" content="A fictional page for the Pocatello Chamber of Commerce. Done by Jennifer Malan for WDD 231 at BYU-I.">
+    <meta property="og:description" content="A fictional page for the Pocatello Chamber of Commerce. Done by Jennifer Malan for WDD 231 at BYU-I.">
     <meta property="og:url" content="https://jmalan210.github.io/wdd231/chamber/directory.html">
-    <meta propert="og:image" content="https://pixabay.com/get/gc618fbfe319733251ab50970295b6001edfe6c0bb3befc263a2228fcfdc3a5198b86751df0b763301cd2d3166e64918b_640.jpg">
+    <meta property="og:image" content="https://pixabay.com/get/gc618fbfe319733251ab50970295b6001edfe6c0bb3befc263a2228fcfdc3a5198b86751df0b763301cd2d3166e64918b_640.jpg">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -18,12 +18,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <div class="top-bar">
     <header>       
-        <img src="images/mountains.svg" alt="mountains icon" width="150" height="auto">
-        <h1>Pocatello<br>Chamber of Commerce</h1>
+        <img src="images/mountains.svg" alt="mountains icon" width="100">
+        <h1>Pocatello Chamber of Commerce</h1>
         <button id="ham-btn" class="hamburger" aria-label="menu"></button>
     </header>
     <nav id="nav-bar" class="navigation">
@@ -35,6 +36,7 @@
     </div>
     <main>
         <h2>Directory</h2>
+        <div id="cards"></div>
     </main>
     <footer>
        <p><span class="title">Pocatello Chamber of Commerce</span><br>324 S Main St.<br>Pocatello, ID 83204<br>info@pocatellocc.org<br>208.555.1525</p>
