@@ -150,6 +150,8 @@ h2 {
     section {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        margin: 0;
+        padding: 5px;
                 
     }
 

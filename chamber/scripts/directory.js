@@ -16,17 +16,11 @@ getMemberData();
 gridBtn.addEventListener('click', () => {
     display.classList.add('grid');
     display.classList.remove('list');
-    
-
-    
-    
 })
 
 listBtn.addEventListener('click', () => {
     display.classList.add('list');
     display.classList.remove('grid');
-    
-    
 })
 
 
