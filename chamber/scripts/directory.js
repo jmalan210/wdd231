@@ -37,8 +37,8 @@ const displayMembersCards = (members) => {
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `Logo for ${member.name}`);
         logo.setAttribute('loading', 'lazy');
-        // logo.setAttribute('max-width', '200');
-        // logo.setAttribute('height', '100');
+        logo.setAttribute('max-width', '200');
+        logo.setAttribute('height', '100');
         name.setAttribute('class', 'name');
         
         name.textContent = `${member.name}`;
