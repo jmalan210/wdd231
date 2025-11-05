@@ -19,8 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
+    <div id="pagewrap">
     <div class="top-bar">
     <header>       
         <img src="images/mountains.svg" alt="mountains icon" width="100">
@@ -36,8 +38,10 @@
     </div>
     <main>
         <h2>Directory</h2>
+        <div class="buttons">
         <button id="grid-button">Grid View</button>
         <button id="list-button">List View</button>
+        </div>
          <div id="display" class="grid"></div>
     </main>
     <footer>
@@ -47,9 +51,9 @@
             <a href="www.instagram.com"><img src="images/instagram.svg" alt="instagram icon"></a>
             <a href="www.linkedin.com"><img src="images/linkedin.svg" alt="linkedin icon"></a>
        </div>
-       <p>WDD 231 Class Project<br>Jennifer Malan<br>&copy; Pocatello Chamber of Commerce<br><span id="lastmodified"></span>
+       <p>WDD 231 Class Project<br>Jennifer Malan<br>&copy;<span id="currentyear"></span> Pocatello Chamber of Commerce<br><span id="lastModified"></span>
        </p>
     </footer>
-    
+    </div>
 </body>
 </html>

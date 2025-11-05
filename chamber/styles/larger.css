@@ -55,7 +55,10 @@ header {
 
 
 /******************MAIN********************/
-
+.list section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+}
 
    
 /******************FOOTER*******************/

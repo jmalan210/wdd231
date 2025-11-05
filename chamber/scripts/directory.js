@@ -32,19 +32,23 @@ const displayMembersCards = (members) => {
         let addressStreet = document.createElement('p');
         let addressCSZ = document.createElement('p');
         let phone = document.createElement('p');
-        let url = document.createElement('p');
+        let url = document.createElement('a');
 
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `Logo for ${member.name}`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', 'auto');
-        logo.setAttribute('height', '100px');
+        // logo.setAttribute('max-width', '200');
+        // logo.setAttribute('height', '100');
         name.setAttribute('class', 'name');
+        
         name.textContent = `${member.name}`;
         addressStreet.textContent = `${member.streetaddress}`;
         addressCSZ.textContent = `${member.citystatezip}`
         phone.textContent = `${member.phone}`;
-        url.textContent = `${member.url}`;
+
+        url.href = `${member.url}`;
+        url.setAttribute('target', 'blank');
+        url.innerHTML = `${member.url}`;
 
         card.appendChild(name);
         card.appendChild(logo);
