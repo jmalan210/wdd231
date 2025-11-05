@@ -142,7 +142,7 @@ h2 {
     flex-direction: column;
     place-items: center;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom:10px;
     border: 2px solid var(--midnight);
     width: 300px;
 }
@@ -151,6 +151,10 @@ h2 {
         max-height: 100px;
         display: block;
         margin: auto;
+    }
+
+    .grid section p {
+        margin: 0;
     }
        
 
