@@ -41,6 +41,7 @@ header {
     grid-template-columns: 100px auto auto;
     align-items: center;
     background-color: var(--celeste);
+    padding-top: 20px;
 }
 
 header img {
