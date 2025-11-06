@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 50rem) {
 
 /****************HEADER**********************/
 header, main, nav, footer {
@@ -8,6 +8,7 @@ header, main, nav, footer {
 
 h1 {
     text-wrap: balance;
+    font-size: 2rem;
 }
 
 .top-bar {
