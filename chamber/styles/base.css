@@ -17,6 +17,7 @@
     
 }
 
+
 #pagewrap {
 
     max-width: 1200px;
@@ -219,6 +220,15 @@ h2 {
 
         .list img {display: none;
         }
+
+/**************HOME PAGE******************/
+
+.hero {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 
     

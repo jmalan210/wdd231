@@ -20,8 +20,10 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
+    
     <div id="pagewrap">
     <div class="top-bar">
     <header>       
@@ -36,8 +38,34 @@
             <ul><li><a href="discover.html">Discover</a></li></ul>
         </nav>
     </div>
-    <main>
-        
+    <main>      
+       <img class="hero" src="images/buckskin-autumn.webp" alt="Buckskin road in autumn">
+        <h2>Home</h2>
+        <div>
+            <section id="events">
+                <h3>Events</h3>
+            </section>
+            <section id="current-weather">
+                <h3>Current Weather</h3>
+                <img id="weather-icon">
+                <p id="current-temp"></p>
+                <p id="weather-description"></p>
+                <p id="high-temp"></p>
+                <p id="low-temp"></p>
+                <p id="humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
+
+            </section>
+            <section id="forecast">
+                <h3>Weather Forecast</h3>
+                <p id="today"></p>
+                <p id="next-day"></p>
+                <p id="third-day"></p>
+            </section>
+        </div>
+        <div id="spotlights">            
+        </div>
     </main>
     <footer>
        <p><span class="title">Pocatello Chamber of Commerce</span><br>324 S Main St.<br>Pocatello, ID 83204<br>info@pocatellocc.org<br>208.555.1525</p>
