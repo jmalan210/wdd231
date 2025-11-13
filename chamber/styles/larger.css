@@ -15,7 +15,8 @@ h1 {
     display: grid;
     grid-template-columns: auto auto;
     align-items: baseline;
-    background-color: var(--celeste);
+    /* background-color:#b2c2cb80; */
+    border-bottom: var(--marigold) 5px solid;
     
 }
 
@@ -47,6 +48,7 @@ header {
 .navigation ul li a.active {
     text-decoration: overline;
     text-decoration-thickness: 3px;
+    text-decoration-color: var(--marigold);
     border: none;
 }
 

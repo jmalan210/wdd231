@@ -2,9 +2,8 @@
     --heading-font: "Montserrat", sans-serif;
     --body-font: "Cardo", serif;
     --midnight: #013d5a;
-    --lionsmane: #fcf3e3;
-    --celeste: #e1ebe9;
-    --herb: #708c69;
+    --celeste: #b2c2cb;
+    --slate: #5f7d9b;
     --marigold: #f4a25b;
 
 }
@@ -13,6 +12,7 @@
     box-sizing: border-box;
     padding: 0;
     font-family: var(--body-font);
+    color: var(--midnight);
    
     
 }
@@ -41,12 +41,12 @@ header {
     display: grid;
     grid-template-columns: 100px auto auto;
     align-items: center;
-    background-color: var(--celeste);
     padding-top: 20px;
 }
 
 header img {
     width: 100px;
+
     
 }
 
@@ -228,6 +228,7 @@ h2 {
 .hero {
     max-width: 100%;
     height: auto;
+    /* border-bottom: var(--marigold) 5px solid; */
 }
 
 .events-table {
@@ -255,6 +256,7 @@ h2 {
     padding: 5px;
     margin: 0;
     font-family: var(--heading-font);
+    border-bottom: solid 5px var(--marigold);
     
 }
 
@@ -296,16 +298,11 @@ h2 {
 
 
 #events-table th {
-    text-align: left;
-    font-family: var(--heading-font);
-    color: var(--midnight);
-    font-size: 1.1rem;
-    text-decoration: underline;
-    
+    display: none;   
 }
 
 #events-table tr:nth-child(even) {
-    background-color: var(--celeste);
+    background-color: #b2c2cb80;
 }
 #events-table td:first-child {
         text-align: left;
@@ -320,10 +317,10 @@ h2 {
 }
 
 #events-table td a:hover {
-    color: var(--herb)
+    color: var(--slate)
 }
 #events-table td a:visited {
-    color: darkred;
+    color: #5a013c;
 }
 
 #current-temp {
