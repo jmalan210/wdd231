@@ -149,6 +149,8 @@ h2 {
     padding-bottom:10px;
     border: 2px solid var(--midnight);
     width: 300px;
+    box-shadow: 3px 3px 10px darkgrey;
+   
 }
     .grid section img {
         max-width: 100%;
@@ -228,12 +230,135 @@ h2 {
     height: auto;
 }
 
+.events-table {
 
+}
 
+.homesections {
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: 10px;
+    margin: 10px;
+}
 
+.homesections section {
+    border: 2px solid var(--midnight);
+    box-shadow: 3px 3px 10px darkgrey;
+   
     
+  }
+
+.homesections section h3 {
+    display: block;
+    background-color: var(--midnight);
+    color: white;
+    padding: 5px;
+    margin: 0;
+    font-family: var(--heading-font);
+    
+}
+
+.homesections img {
+   
+   width: 100px;
+   height:100px;
+}
+ 
+#current-temp, #weather-description{
+    text-align: center;
+}
+
+.homesections table {
+    margin: 0 auto;
+    border-collapse: separate;
+    
+    
+}
 
 
+.homesections table td{
+    padding: 5px;
+    font-size:1rem;
+}
+
+.homesections table td:first-child {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+    font-family: var(--heading-font);   
+}
+
+.homesections table td:nth-child(even) {
+   
+    text-align: left;
+    
+}
+
+
+#events-table th {
+    text-align: left;
+    font-family: var(--heading-font);
+    color: var(--midnight);
+    font-size: 1.1rem;
+    text-decoration: underline;
+    
+}
+
+#events-table tr:nth-child(even) {
+    background-color: var(--celeste);
+}
+#events-table td:first-child {
+        text-align: left;
+        text-wrap: balance;
+        font-family: var(--heading-font);
+    }
+
+#events-table td a {
+    text-decoration: none;
+    color: var(--midnight);
+    font-family: var(--heading-font);
+}
+
+#events-table td a:hover {
+    color: var(--herb)
+}
+#events-table td a:visited {
+    color: darkred;
+}
+
+#current-temp {
+    font-size: 2rem;
+}
+
+#weather-description {
+    text-transform: capitalize;
+}
+
+.weather-div {
+    display: flex;
+    flex-direction: row;
+}
+    
+.forecast-div {
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    
+  
+}
+
+.forecast-div table {
+    border-spacing:10px;
+    margin-top: 1rem;
+}
+
+.forecast-div table td{
+    font-size: 1rem;
+   
+  
+}
 
 
 /*********FOOTER****************/

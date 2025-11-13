@@ -21,6 +21,7 @@
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <!-- <script src="scripts/forecast.js" defer></script> -->
 </head>
 <body>
     
@@ -39,29 +40,118 @@
         </nav>
     </div>
     <main>      
-       <img class="hero" src="images/buckskin-autumn.webp" alt="Buckskin road in autumn">
+       <img class="hero" src="images/winter-mountains.webp" alt="snow-covered mountains">
         <h2>Home</h2>
-        <div>
+        <div class="homesections">
             <section id="events">
                 <h3>Events</h3>
+                <table id="events-table">
+                    <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Location</th>
+                        <th>Dates</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td><a href="https://www.isu.edu/stephens/?trumbaEmbed=view%3Devent%26eventid%3D187968574" target="blank">A Christmas Carol</a></td>
+                        <td>Bistline Theatre</td>
+                        <td>Nov. 14-22</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://givingmachineeastidaho.org/pocatello/" target="blank">Light the World Giving Machine</a></td>
+                        <td>ICCU Headquarters</td>
+                        <td>Nov. 15-30</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.isu.edu/cob/festival/" target="blank">Festival of Trees</a></td>
+                        <td>Stephens PAC</td>
+                        <td>Nov. 19-22</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://idahohighcountry.org/event/pocatello-christmas-night-lights-parade/" target="blank">Christmas Night Lights Parade</a></td>
+                        <td>Downtown Pocatello</td>
+                        <td>Nov. 28</td>
+                    </tr>
+                     <tr>
+                        <td><a href="https://meceventcenter.com/event/hello-goodbye-craft-show/2025-12-06/" target="blank">Goodbye Hello Craft Show</a></td>
+                        <td>Mountain View Event Center</td>
+                        <td>Dec. 6</td>
+                    </tr>
+                     <tr>
+                        <td><a href="https://iscsymphony.org/25-26-season/#cc3" target="blank">ISCS Joy to the World!</a></td>
+                        <td>Jensen Concert Hall</td>
+                        <td>Dec. 12 & 13</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.palacetheatrearts.com/breakfastwithsanta" target="blank">Breakfast with Santa</a></td>
+                        <td>The Palace Theatre</td>
+                        <td>Dec. 13 & 20</td>
+                    </tr>
+                </table>
             </section>
             <section id="current-weather">
                 <h3>Current Weather</h3>
+                
+                <div class="weather-div">
                 <img id="weather-icon">
-                <p id="current-temp"></p>
-                <p id="weather-description"></p>
-                <p id="high-temp"></p>
-                <p id="low-temp"></p>
-                <p id="humidity"></p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
-
+                <table>
+                    <tr>
+                    <td id="current-temp" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td id="weather-description" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td>High:</td>
+                        <td id = "high-temp"></td>
+                    </tr>
+                    <tr>
+                        <td>Low:</td>
+                        <td id="low-temp"></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity:</td>
+                        <td id="humidity"></td>
+                    </tr>
+                    <tr>
+                        <td>Sunrise:</td>
+                        <td id="sunrise"></td>
+                    </tr>
+                    <tr>
+                        <td>Sunset:</td>
+                        <td id="sunset"></td>
+                    </tr>
+                </table>
+                </div>
             </section>
             <section id="forecast">
                 <h3>Weather Forecast</h3>
-                <p id="today"></p>
-                <p id="next-day"></p>
-                <p id="third-day"></p>
+                <div class="forecast-div">
+                <table class = "forecast-table">
+                    <tr>
+                        <td id = "day1"></td>
+                        <td id = "today"></td>
+                    </tr>
+                    <tr>
+                        <td id = "day2"></td>
+                        <td id = "next-day"></td>
+                    </tr>
+                    <tr>
+                        <td id = "day3"></td>
+                        <td id = "third-day"></td>
+                    </tr>
+                    <tr>
+                        <td id = "day4"></td>
+                        <td id = "fourth-day"></td>
+                    </tr>
+                    <tr>
+                        <td id = "day5"></td>
+                        <td id = "fifth-day"></td>
+                    </tr>
+                </table>
+                </div>
+               
             </section>
         </div>
         <div id="spotlights">            
