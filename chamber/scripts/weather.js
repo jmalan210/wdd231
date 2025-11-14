@@ -55,8 +55,8 @@ function displayResults(data) {
     currentTemp.innerHTML = `${temperature}&deg;F`;
     const description = data.weather[0].description;
     const iconSource = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherIcon.setAttribute('src', iconSource);
-    weatherIcon.setAttribute('alt', description);
+    weatherIcon.setAttribute('src', `${iconSource}`);
+    weatherIcon.setAttribute('alt', `${description}`);
     weatherDescription.textContent = `${description}`;
     const high = Math.round(data.main.temp_max);
     highTemp.innerHTML = `${high}&deg;`;

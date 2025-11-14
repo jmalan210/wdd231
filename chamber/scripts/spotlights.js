@@ -56,12 +56,12 @@ const displaySpotlightCards = (spotlightMembers) => {
         
         if (member.level === 1) {
            
-            membershipLevel.setAttribute('src', "/images/goldstar.svg");
+            membershipLevel.setAttribute('src', "images/goldstar.svg");
             membershipLevel.setAttribute('alt', `gold star`);
            
         }
         if (member.level === 2) {
-            membershipLevel.setAttribute('src', "/images/silver-star.svg");
+            membershipLevel.setAttribute('src', "images/silver-star.svg");
             membershipLevel.setAttribute('alt', `silver star`);
             
         }
