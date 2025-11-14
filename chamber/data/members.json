@@ -7,18 +7,18 @@
             "phone":"208-232-8996",
             "url":"https://www.barriessports.com/",
             "image":"images/barries.jpg",
-            "membership level": 3
+            "level": 3
             
         },
 
         {
-            "name":"BengalWorks Graphics",
-            "streetaddress":"470 W. Oak St",
-            "citystatezip": "Pocatello, ID 83201",
-            "phone":"208-242-3831",
-            "url":"https://www.bengalworks.com/",
-            "image":"images/bengalworks.jpg",
-            "membership level": 2 
+            "name":"Glean Coffee Roasters",
+            "streetaddress":"240 S Main St",
+            "citystatezip": "Pocatello, ID 83204",
+            "phone":"208-240-6326",
+            "url":"https://www.gleancoffee.com",
+            "image":"images/gleancoffee.jpg",
+            "level": 2 
             
         },
 
@@ -29,7 +29,7 @@
             "phone":"208-233-9210",
             "url":"https://www.goodysdeli.com/",
             "image":"images/goodys.jpg",
-            "membership level": 3
+            "level": 3
             
         },
 
@@ -41,7 +41,7 @@
             "phone":"208-478-2000",
             "url":"https://jakers.com/pocatello/",
             "image":"images/jakers.jpg",
-            "membership level": 3 
+            "level": 3 
             
         },
 
@@ -52,7 +52,7 @@
             "phone":"208-237-2158",
             "url":"https://www.jerisjumboscafe.com/",
             "image":"images/jumbos.jpg",
-            "membership level": 2 
+            "level": 2 
             
         },
 
@@ -64,7 +64,7 @@
             "phone":"208-479-1841",
             "url":"https://www.redrabbitgrill.com/",
             "image":"images/redrabbit.jpg",
-            "membership level": 1 
+            "level": 1 
             
         },
 
@@ -75,7 +75,29 @@
             "phone":"208-252-4478",
             "url":"https://www.thesodabarn.com/",
             "image":"images/sodabarn.jpg",
-            "membership level": 1
+            "level": 1
+            
+        },
+
+         {
+            "name":"Christine's Floral & Gifts",
+            "streetaddress":"157 Jefferson St",
+            "citystatezip": "Pocatello, ID 83201",
+            "phone":"208-234-8000",
+            "url":"https://www.pocatellofloral.com/",
+            "image":"images/christines-floral.jpg",
+            "level": 1
+            
+        },
+
+        {
+            "name":"Hares and Hatters Bookshop",
+            "streetaddress":"200 S Main Ste G",
+            "citystatezip": "Pocatello, ID 83204",
+            "phone":"208-648-3727",
+            "url":"https://www.haresandhattersbookshop.com/",
+            "image":"images/haresandhatters.jpg",
+            "level": 1
             
         } 
 

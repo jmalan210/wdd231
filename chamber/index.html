@@ -14,33 +14,42 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <!-- <script src="scripts/forecast.js" defer></script> -->
+    <script src="scripts/spotlights.js" defer></script>
+   
 </head>
 <body>
     
     <div id="pagewrap">
-    <div class="top-bar">
-    <header>       
+        <header>    
+            <div class="header-left">  
         <img src="images/mountains.svg" alt="mountains icon" width="100" height="100" >
-        <h1>Pocatello Chamber of Commerce</h1>
+        
+       
+        <h1><span>Pocatello</span><br class="responsive-break">Chamber of Commerce</h1>
+        </div> 
+      
         <button id="ham-btn" class="hamburger" aria-label="menu"></button>
-    </header>
-    <nav id="nav-bar" class="navigation">
-            <ul><li><a href="index.html" class="active">Home</a></li></ul>
-            <ul><li><a href="directory.html">Directory</a></li></ul>
-            <ul><li><a href="join.html">Join</a></li></ul>
-            <ul><li><a href="discover.html">Discover</a></li></ul>
+   
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
         </nav>
-    </div>
-    <main>      
+         </header>
+        <main> 
+            <div id="hero-div">  
        <img class="hero" src="images/winter-mountains.webp" alt="snow-covered mountains">
+       <button id="join-button" aria-label="join button"><a href="join.html">Join Today!</a></button>
+       </div> 
         <h2>Home</h2>
         <div class="homesections">
             <section id="events">

@@ -6,28 +6,48 @@ header, main, nav, footer {
     margin: 0 auto;
 }
 
-h1 {
-    text-wrap: balance;
-    font-size: 2.5rem;
-}
-
-.top-bar {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: baseline;
-    /* background-color:#b2c2cb80; */
-    border-bottom: var(--marigold) 5px solid;
-    
-}
 
 header {
-  display: grid;
-  grid-template-columns: 125px auto;
-  align-items: baseline;
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+    gap: 1rem
+   
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap:2rem;
 }
 
+.header-left img {
+   
+    display: block;
+    width: 100px;
+    height: auto;
 
+}
+h1{
+    font-family: var(--body-font);
+    font-weight: 200;
+    color: var(--midnight);
+    text-align: left;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    line-height: .9;
+    margin-top: 30px; 
+    margin-bottom: 0;
+    padding: 0;
+   
+}
+
+h1 span {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
     
 /*****************NAVIGATION********************/
 
@@ -35,10 +55,20 @@ header {
     display: none;
 }
 .navigation {
-   display: flex;
-   align-items: end;
-   
-   
+   display: block; 
+   position: static;
+   width: auto;
+   background:none;
+   margin: 0;
+   padding: 0;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation ul li a {

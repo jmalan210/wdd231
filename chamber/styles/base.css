@@ -27,28 +27,39 @@
 
 /************HEADER*******************/
 
-
 h1{
-    font-family: var(--heading-font);
+    font-family: var(--body-font);
+    font-weight: 200;
     color: var(--midnight);
-    text-align: center;
-    text-wrap: balance;
-    padding-right: 10px;
-    font-size: 1.8rem;
+    text-align: left;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    line-height: .9;
+    margin-bottom: 0;
+    padding: 0;
    
 }
 
-header {
-    display: grid;
-    grid-template-columns: 100px auto auto;
-    align-items: center;
-    padding-top: 20px;
+h1 span {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    
+    
+    
 }
 
-header img {
-    width: 100px;
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+    border-bottom: 5px solid var(--marigold);
+}
 
-    
+.header-left {
+    display: flex;
+    gap: 1rem;
 }
 
 /***************HAMBURGER BUTTON****************/
@@ -58,7 +69,8 @@ header img {
     border: none;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-right: 5px;
+    margin-left: auto;
+    padding-right: 1rem;
 }
 
 .hamburger::before {
@@ -71,6 +83,11 @@ header img {
 }
 
 /*************NAVIGATION***************/
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+}
 .navigation ul li {
     list-style-type: none;
 }
@@ -97,6 +114,12 @@ header img {
 
 .navigation {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
 }
 
 .navigation.show {
@@ -225,11 +248,39 @@ h2 {
         }
 
 /**************HOME PAGE******************/
+#hero-div {
+    position:relative;
+}
 
+#join-button{
+    position: absolute;
+    top:75%;
+    left: 85%;
+    transform: translate(-75%, -75%);
+    height: 50px;
+    width: 175px;
+    z-index: 2;
+    background-image: radial-gradient(#ebbe97 20%, #f4a25b 80%);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#join-button a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    font-weight: bolder;
+}
 .hero {
     max-width: 100%;
     height: auto;
-    /* border-bottom: var(--marigold) 5px solid; */
+    box-shadow: 3px 3px 10px darkgrey;
+  
+    
 }
 
 .homesections {
@@ -354,6 +405,44 @@ h2 {
   
 }
 
+#spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+
+}
+
+#spotlights section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    border: 2px solid var(--midnight);
+    padding: 5px;
+    margin: 1rem;
+    box-shadow: 3px 3px 10px darkgrey;
+
+}
+
+.card-center {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.spotlightlogo {
+    width: auto;
+    height: 75px;
+}
+
+.star {
+    position: absolute;
+    top: -20px;
+    left: -23px;
+
+
+}
 
 /*********FOOTER****************/
 footer {
