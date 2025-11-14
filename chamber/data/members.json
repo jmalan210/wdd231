@@ -12,6 +12,17 @@
         },
 
         {
+            "name":"Christine's Floral & Gifts",
+            "streetaddress":"157 Jefferson St",
+            "citystatezip": "Pocatello, ID 83201",
+            "phone":"208-234-8000",
+            "url":"https://www.pocatellofloral.com/",
+            "image":"images/christines-floral.jpg",
+            "level": 1
+            
+        },
+
+        {
             "name":"Glean Coffee Roasters",
             "streetaddress":"240 S Main St",
             "citystatezip": "Pocatello, ID 83204",
@@ -56,6 +67,18 @@
             
         },
 
+         {
+            "name":"K-Ari Skincare",
+            "streetaddress":"1000 Pocatello Creek Rd, Ste 3",
+            "citystatezip": "Pocatello, ID 83201",
+            "phone":"208-240-8659",
+            "url":"https://https://www.k-ari.com/",
+            "image":"images/k-ari.jpg",
+            "level": 1
+            
+        }, 
+
+
 
         {
             "name":"Red Rabbit Grill",
@@ -77,30 +100,11 @@
             "image":"images/sodabarn.jpg",
             "level": 1
             
-        },
+        }
 
-         {
-            "name":"Christine's Floral & Gifts",
-            "streetaddress":"157 Jefferson St",
-            "citystatezip": "Pocatello, ID 83201",
-            "phone":"208-234-8000",
-            "url":"https://www.pocatellofloral.com/",
-            "image":"images/christines-floral.jpg",
-            "level": 1
-            
-        },
+         
 
-        {
-            "name":"Hares and Hatters Bookshop",
-            "streetaddress":"200 S Main Ste G",
-            "citystatezip": "Pocatello, ID 83204",
-            "phone":"208-648-3727",
-            "url":"https://www.haresandhattersbookshop.com/",
-            "image":"images/haresandhatters.jpg",
-            "level": 1
-            
-        } 
-
+       
         
         
 

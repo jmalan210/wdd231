@@ -97,7 +97,14 @@ h1 span {
 .homesections {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+
+
 }  
+
+#spotlights {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 /******************FOOTER*******************/
 footer {
     display: grid;
