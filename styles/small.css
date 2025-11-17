@@ -186,6 +186,29 @@ main section {
     text-align: center;
 }
 
+/*******************MODAL******************/
+#coursedetails {
+    border: 2px solid var(--teal);
+    border-radius: 5px;
+    padding: 1rem;background-color: #fff;
+    box-sizing: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    
+}
+
+::backdrop {
+    background-color: lightgrey;
+}
+
+#coursedetails button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 2px solid var(--teal);
+    border-radius: 5px;
+}
 /***************FOOTER******************/
 footer {
     background-color: #ddd;
