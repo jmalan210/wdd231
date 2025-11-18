@@ -488,7 +488,6 @@ legend {
     font-family: var(--heading-font);
     font-weight: bold;
     margin-top: .5rem;
-    border: 1px solid var(var(--midnight));
     border-radius: 10px;
 
     
@@ -535,8 +534,10 @@ legend {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 1 1 50%;
     align-items: center;
     justify-content: center;
+    align-content: center;
     gap: 1rem;
     margin: 1rem 0 1rem 0;
     
