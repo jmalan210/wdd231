@@ -42,6 +42,10 @@ body {
     
 }
 
+.scenarios, .purpose{
+    text-align: left;
+}
+
 .navy{
     background-color: var(--navy);
     color: white;
@@ -72,6 +76,7 @@ li {
 .mobile {
     max-width: 300px;
 }
+
 
 @media only screen and (min-width: 50rem) {
 
