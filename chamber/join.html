@@ -18,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <div id="pagewrap">
@@ -43,8 +43,93 @@
             </ul>
         </nav>
          </header>
-    <main>
-      <h2>Under Construction</h2>
+    <main id="main-join">
+        <div id="form-div">
+      <form method="GET" action="thanks.html" class="join-form">
+        <fieldset>
+            <legend>Join Us!</legend>
+            <label for="fname">First Name*:</label>
+            <input type="text" id="fname" name="fname" title="fname" autocomplete="given-name" required>
+            <label for="lname">Last Name*:</label>
+            <input type="text" id="lname" name="lname" title="lname" autocomplete="family-name" required>
+
+            <label for="org-title">Organizational Title:</label>
+            <input type="text" id="org-title" name="org-title"  title="org-title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+
+            <label for="email">E-Mail*:</label>
+            <input type="email" id="email" name="email" title="email" autocomplete="email" placeholder="yourname@yourcompany.org" required>
+
+            <label for="phone">Mobile Phone Number:*</label>
+            <input type="tel" id="phone" name="phone" title="phone" autocomplete="tel" required>
+
+            <label for="org-name">Business/Organization Name*:</label>
+            <input type="text" name="org-name" id="org-name" title="org-name" autocomplete="organization" required>
+
+            <label for="level">Membership Level: <select name="level" id="level"></label>
+                <option value="" selected disabled>Choose One</option>
+                <option value="gold">Gold Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="np">Non-Profit Membership - no fee</option>
+            </select><br><br>
+
+            <label for="description">Please provide a brief description of your organization:</label>
+                <textarea name="description" id="description" title="description"></textarea>
+           
+
+            <input type="hidden" name="time-stamp" id="time-stamp" title="time-stamp">
+
+            <button type="submit">Join!</button>
+        </fieldset>
+      </form>
+      </div>
+      <div id="card-div">
+        <section>
+            <h3>Gold Membership</h3>
+            <img src="images/goldstar.svg" alt="gold star">            
+            <button class="open-modal">Learn More</button>
+            <dialog class="membership-dialog">
+                <button class="close-modal">X</button>
+                <h2>Gold Membership Level</h2>
+                <p><strong>Price:</strong> $1500 annually </p>
+                <p><strong>Includes:</strong><br>✅Conferences<br>✅Training<br>✅Spotlight positions on our homepage<br>✅Event discounts<br>✅Entry in the chamber directory. </p>
+            </dialog>
+        </section>
+        <section>
+            <h3>Silver Membership</h3>
+            <img src="images/silver-star.svg" alt="silver star">
+            <button class="open-modal">Learn More</button>
+            <dialog class="membership-dialog">
+                <button class="close-modal">X</button>
+                <h2>Silver Membership Level</h2>
+                <p>Price: $1000 annually </p>
+                <p><strong>Includes:</strong><br>❌Conferences<br>❌Training<br>✅Spotlight positions on our homepage<br>✅Event discounts<br>✅Entry in the chamber directory. </p>
+            </dialog>
+        </section>
+        <section>
+            <h3>Bronze Membership</h3>
+            <img src="images/bronze-star.svg" alt="bronze star">
+            
+            <button class="open-modal">Learn More</button>
+            <dialog class="membership-dialog">
+                <button class="close-modal">X</button>
+                <h2>Bronze Membership Level</h2>
+                <p>Price: $500 annually </p>
+                <p><strong>Includes:</strong><br>❌Conferences<br>❌Training<br>❌Spotlight positions on our homepage<br>✅Event discounts<br>✅Entry in the chamber directory. </p>
+            </dialog>
+        </section>
+        <section>
+             <h3>Non-Profit Membership</h3>
+            <img src="images/blue-star.svg" alt="blue star">
+            <button class="open-modal">Learn More</button>
+            <dialog class="membership-dialog">
+                <button class="close-modal">X</button>
+                <h2>Non-Profit Membership Level</h2>
+                <p>Price: No fee for non-profit organizations </p>
+                <p><strong>Includes:</strong><br>❌Conferences<br>❌Training<br>❌Spotlight positions on our homepage<br>✅Event discounts<br>✅Entry in the chamber directory. </p>
+            </dialog>
+        </section>
+      </div>
     </main>
     <footer>
        <p><span class="title">Pocatello Chamber of Commerce</span><br>324 S Main St.<br>Pocatello, ID 83204<br>info@pocatellocc.org<br>208.555.1525</p>

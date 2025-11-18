@@ -174,6 +174,7 @@ h2 {
     border: 2px solid var(--midnight);
     width: 300px;
     box-shadow: 3px 3px 10px darkgrey;
+    border-radius: 5px;
    
 }
     .grid section img {
@@ -282,6 +283,7 @@ h2 {
     max-width: 100%;
     height: auto;
     box-shadow: 3px 3px 10px darkgrey;
+    border-radius: 0 0 5px 5px;
   
     
 }
@@ -295,6 +297,7 @@ h2 {
 
 .homesections section {
     border: 2px solid var(--midnight);
+    border-radius: 5px;
     box-shadow: 3px 3px 10px darkgrey;
    
     
@@ -425,6 +428,7 @@ h2 {
     padding: 5px;
     margin: 1rem;
     box-shadow: 3px 3px 10px darkgrey;
+    border-radius: 5px;
     
 }
 
@@ -443,9 +447,222 @@ h2 {
     position: absolute;
     top: -20px;
     left: -23px;
+}
 
+/******************JOIN PAGE *****************/
+#main-join {
+    text-align: center;
+}
+ form {
+    display: inline-block;
+    text-align: left;
+    min-width: 300px;
+    max-width: 600px;
+
+ }
+
+fieldset {
+    max-width: 100%;
+    border: 5px solid var(--slate);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    margin-bottom: .5rem;  
+    box-shadow: 3px 3px 10px darkgrey;
 
 }
+
+legend {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-align: center;
+    background-color: var(--midnight);
+    color: white;
+    border-bottom: 5px solid var(--marigold);
+    padding: .25rem;
+    border-radius: 5px;
+}
+
+.join-form label {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    margin-top: .5rem;
+    border: 1px solid var(var(--midnight));
+    border-radius: 10px;
+
+    
+}
+.join-form input { 
+    font-family: var(--body-font);
+    color: var(--midnight);
+    padding: .5rem;
+}
+
+#level {
+    padding: .4rem;
+}
+
+#description {
+    width: 100%;
+    height: 75px;
+    padding: .25rem;
+}
+
+:required:hover {
+    border: 2px darkred solid;
+}
+
+.join-form button {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    width: 50%;
+     margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: var(--midnight);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 15px;
+    height: 50px;
+    
+
+}
+
+#card-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0 1rem 0;
+    
+    
+}
+
+#card-div img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#card-div section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--midnight);
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 3px 3px 10px darkgrey;
+    transform: translateY(-100px);
+    animation: floatDown 2s ease-out forwards;
+}
+
+@keyframes floatDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100%  {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+#card-div section:nth-child(1) {animation-delay: 0s;}
+#card-div section:nth-child(2) {animation-delay: 0.4s;}
+#card-div section:nth-child(3) {animation-delay: 0.8s;}
+#card-div section:nth-child(4) {animation-delay: 1.2s;}
+
+
+#card-div section h3 {
+    display: block;
+    background-color: var(--midnight);
+    color: white;
+    padding: 5px;
+    margin: 0;
+    font-family: var(--heading-font);
+    border-bottom: solid 5px var(--marigold);
+}
+
+.open-modal{
+    width: 50%;
+     max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: var(--midnight);
+    color: white;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    border-radius: 15px;
+    height: 30px;
+}
+
+dialog {
+    position: relative;
+    background-color: var(--celeste);
+    text-align: left;
+    inset: 0;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.close-modal {
+    position:absolute;
+    display: block;
+    top: 1%;
+   right: 1%;
+    background-color: var(--midnight);
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .25rem;
+    border-radius: 5px;
+    border: 5px var(--midnight) solid;
+    
+}
+
+form, fieldset, .join-form button, .open-modal, #card-div section, #card-div img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/************THANKS PAGE******************/
+
+.thanks-main {
+    text-align: center;
+}
+.thanks-h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+}
+.thanks-p {
+    text-align: center;
+    font-size: larger;
+}
+.form-data {
+    display: inline-block;
+    text-align: left;
+    border: 2px solid var(--midnight);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    line-height: 1.5;
+    font-size: large;
+    
+}
+
+
 
 /*********FOOTER****************/
 footer {
