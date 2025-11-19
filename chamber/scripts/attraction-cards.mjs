@@ -1,6 +1,6 @@
 import { attractions } from "../data/attractions.mjs";
 const cardArea = document.querySelector('.attraction-cards');
-const welcomeMessage = document.querySelector('.welcome-msg');
+
 
 
 function getAttractionData() {
@@ -46,30 +46,40 @@ function attractionCards(attractions) {
 
 getAttractionData();
 
-function checkVisit() {
+function checkTime() {
+  const welcomeMessage = document.querySelector('.welcome-msg');
   const now = Date.now();
+  
   const lastVisit = localStorage.getItem('lastVisit');
-
   if (!lastVisit) {
     localStorage.setItem('lastVisit', now);
     welcomeMessage.textContent = "Welcome! Let us know if you  have any questions!"
-
+    return;
   }
 
-  const lastVisitTime = Number(lastVisit);
-  const diffMs = now - lastVisitTime;
-  const diffDays = diffMs / (1000 * 60 * 60 * 24);
-  
+  const diffDays = (now - lastVisit) / (1000 * 60 * 60 * 24);
   localStorage.setItem('lastVisit', now);
 
-  if (diffDays < 1)
-  {
+  if (diffDays < 1) {
     welcomeMessage.textContent = "Back so soon! Awesome!"
+  }
+  else if (Math.floor(diffDays) === 1) {
+    welcomeMessage.textContent = `you last visited 1 day ago`;
   }
   else {
     welcomeMessage.textContent = `You last visited ${Math.floor(diffDays)} days ago.`;
   }
 
-}
 
-checkVisit();
+};
+
+checkTime()
+  
+
+  
+
+
+  
+  
+
+  
