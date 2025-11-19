@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 64rem) {
 
 /****************HEADER**********************/
 header, main, nav, footer {
@@ -112,7 +112,11 @@ h1 span {
     display: flex;
 }
 
-
+/***************DISCOVER PAGE***************/
+.attraction-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 /******************FOOTER*******************/
 footer {

@@ -663,7 +663,64 @@ form, fieldset, .join-form button, .open-modal, #card-div section, #card-div img
     
 }
 
+/********************DISCOVER PAGE************************/
 
+
+.attraction-cards {
+    display: grid;
+    gap: 1rem;
+    
+    padding-bottom: 1rem;
+    justify-items: center;
+}
+
+.attraction-cards section {
+    border: 2px solid var(--midnight);
+    border-radius: 5px;
+    width: 100%;
+    gap: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 10px 10px 10px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph" 
+    "address"
+    "description"
+    "cost"
+    ;
+
+}
+
+.attraction-cards h3 {
+    grid-area: name;
+    margin: 0;
+}
+
+.attraction-cards img {
+    width: 100%;
+    height: auto;
+    display: block;
+    grid-area: photograph;
+}
+
+#cost {
+    grid-area: cost;
+    font-size: smaller;
+}   
+
+#description {
+    grid-area: description;
+    margin-top: 5px;
+   
+    
+}
+
+.attraction-cards address {
+    grid-area: address;
+    margin-top: 0;
+}
 
 /*********FOOTER****************/
 footer {
@@ -695,3 +752,24 @@ footer p {
     font-size: small;
 }
 
+
+
+/***********MED WIDTH QUERY*************/
+@media only screen and (min-width: 38rem)  {
+.attraction-cards section {
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "photograph name"
+    "photograph description" 
+    "photograph address"
+    "photograph cost"
+ 
+    ;
+
+}
+
+.attraction-cards img {
+    width: 300px
+}
+    
+}
