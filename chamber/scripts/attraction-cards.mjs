@@ -27,7 +27,7 @@ function attractionCards(attractions) {
     address.textContent = `${attraction.address}`;
     cost.setAttribute('id', 'cost');
     description.textContent = `${attraction.description}`;
-    description.setAttribute('id', 'description');
+    description.setAttribute('id', 'info');
     img.setAttribute('src', attraction.photo);
     img.setAttribute('alt', attraction.name);
     img.setAttribute('loading', 'lazy');
@@ -74,7 +74,7 @@ function checkTime() {
     welcomeMessage.textContent = "Back so soon! Awesome!"
   }
   else if (Math.floor(diffDays) === 1) {
-    welcomeMessage.textContent = `you last visited 1 day ago`;
+    welcomeMessage.textContent = `You last visited 1 day ago`;
   }
   else {
     welcomeMessage.textContent = `You last visited ${Math.floor(diffDays)} days ago.`;
