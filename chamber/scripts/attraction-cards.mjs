@@ -19,23 +19,33 @@ function attractionCards(attractions) {
     let address = document.createElement('address');
     let description = document.createElement('p');
     let img = document.createElement('img');
+    let button = document.createElement('button');
+    
 
     name.textContent = `${attraction.name}`;
-    cost.textContent = `${attraction.cost}`;
+    cost.textContent = `Cost: ${attraction.cost}`;
     address.textContent = `${attraction.address}`;
-    description.textContent = `${attraction.description}`;
     cost.setAttribute('id', 'cost');
+    description.textContent = `${attraction.description}`;
     description.setAttribute('id', 'description');
     img.setAttribute('src', attraction.photo);
     img.setAttribute('alt', attraction.name);
     img.setAttribute('loading', 'lazy');
-    
+    button.textContent = `Learn More!`
+    button.setAttribute('id', 'learn-more');
+    button.setAttribute('aria-label', 'learn-more');
+    button.setAttribute('target', 'blank');
 
+    button.addEventListener('click', () => {
+      window.open(attraction.url, '_blank');
+    });
+   
     card.appendChild(name);
     card.appendChild(cost);
     card.appendChild(address);
     card.appendChild(description);
     card.appendChild(img);
+    card.appendChild(button);
       
     cardArea.appendChild(card);
 

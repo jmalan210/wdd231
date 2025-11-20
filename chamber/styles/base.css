@@ -665,7 +665,22 @@ form, fieldset, .join-form button, .open-modal, #card-div section, #card-div img
 
 /********************DISCOVER PAGE************************/
 
+.welcome-msg {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: larger;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: slideIn 0.6s ease-out forwards;
+}
 
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .attraction-cards {
     display: grid;
     gap: 1rem;
@@ -689,6 +704,7 @@ form, fieldset, .join-form button, .open-modal, #card-div section, #card-div img
     "address"
     "description"
     "cost"
+    "button"
     ;
 
 }
@@ -702,17 +718,20 @@ form, fieldset, .join-form button, .open-modal, #card-div section, #card-div img
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 5px;
     grid-area: photograph;
 }
 
 #cost {
     grid-area: cost;
     font-size: smaller;
+    margin: 0;
 }   
 
 #description {
     grid-area: description;
-    margin-top: 5px;
+    margin: 0;
+   
    
     
 }
@@ -720,6 +739,18 @@ form, fieldset, .join-form button, .open-modal, #card-div section, #card-div img
 .attraction-cards address {
     grid-area: address;
     margin-top: 0;
+}
+
+#learn-more {
+    background-color: var(--midnight);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    max-width: 35%;
+    height: 40px;
+    grid-area: button;
 }
 
 /*********FOOTER****************/
@@ -760,10 +791,9 @@ footer p {
     grid-template-columns: 300px 1fr;
     grid-template-areas: 
     "photograph name"
-    "photograph description" 
-    "photograph address"
-    "photograph cost"
- 
+    "photograph address" 
+    "photograph description"
+    "button cost"
     ;
 
 }
@@ -771,5 +801,9 @@ footer p {
 .attraction-cards img {
     width: 300px
 }
+
+.attraction-cards section:hover {
+   /* border: 3px solid var(--marigold); */
+   background-color: var(--celeste);
     
 }
