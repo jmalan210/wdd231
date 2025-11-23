@@ -1,0 +1,130 @@
+{
+  "cities": [
+    {
+      "name": "New York",
+      "country": "US",
+      "lat": "40.7128",
+      "lon": "-74.0060",
+      "timezone": "America/New_York"
+    },
+    {
+      "name": "Paris",
+      "country": "FR",
+      "lat": "48.8566",
+      "lon": "2.3522",
+      "timezone": "Europe/Paris"
+    },
+    {
+      "name": "Tokyo",
+      "country": "JP",
+      "lat": "35.6895",
+      "lon": "139.6917",
+      "timezone": "Asia/Tokyo"
+    },
+    {
+      "name": "Sydney",
+      "country": "AU",
+      "lat": "-33.8688",
+      "lon": "151.2093",
+      "timezone": "Australia/Sydney"
+    },
+    {
+      "name": "London",
+      "country": "GB",
+      "lat": "51.5074",
+      "lon": "-0.1278",
+      "timezone": "Europe/London"
+    },
+    {
+      "name": "Rio de Janeiro",
+      "country": "BR",
+      "lat": "-22.9068",
+      "lon": "-43.1729",
+      "timezone": "America/Sao_Paulo"
+    },
+    {
+      "name": "Cape Town",
+      "country": "ZA",
+      "lat": "-33.9249",
+      "lon": "18.4241",
+      "timezone": "Africa/Johannesburg"
+    },
+    {
+      "name": "Moscow",
+      "country": "RU",
+      "lat": "55.7558",
+      "lon": "37.6173",
+      "timezone": "Europe/Moscow"
+    },
+    {
+      "name": "Beijing",
+      "country": "CN",
+      "lat": "39.9042",
+      "lon": "116.4074",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "name": "Dubai",
+      "country": "AE",
+      "lat": "25.2048",
+      "lon": "55.2708",
+      "timezone": "Asia/Dubai"
+    },
+    {
+      "name": "Toronto",
+      "country": "CA",
+      "lat": "43.6532",
+      "lon": "-79.3832",
+      "timezone": "America/Toronto"
+    },
+    {
+      "name": "Singapore",
+      "country": "SG",
+      "lat": "1.3521",
+      "lon": "103.8198",
+      "timezone": "Asia/Singapore"
+    },
+    {
+      "name": "Barcelona",
+      "country": "ES",
+      "lat": "41.3851",
+      "lon": "2.1734",
+      "timezone": "Europe/Madrid"
+    },
+    {
+      "name": "Los Angeles",
+      "country": "US",
+      "lat": "34.0522",
+      "lon": "-118.2437",
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "name": "Mumbai",
+      "country": "IN",
+      "lat": "19.0760",
+      "lon": "72.8777",
+      "timezone": "Asia/Kolkata"
+    },
+    {
+      "name": "Dublin",
+      "country": "IE",
+      "lat": "53.3331",
+      "lon": "-6.2489",
+      "timezone": "Europe/Dublin"
+    },
+    {
+      "name": "Edinburgh",
+      "country": "GB",
+      "lat": "55.9533",
+      "lon": "-3.1883",
+      "timezone": "Europe/London"
+    },
+    {
+      "name": "Istanbul",
+      "country": "TR",
+      "lat": "41.0082",
+      "lon": "28.9784",
+      "timezone": "Europe/Istanbul"
+    }
+  ]
+}

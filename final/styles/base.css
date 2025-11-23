@@ -1,0 +1,241 @@
+:root {
+    --heading-font: "Alice", "serif";
+    --body-font: "Raleway", sans-serif;
+    --navy: #0A3556;
+    --light-blue: #5FA8D3;
+    --mint: #A8E6CF;
+    --slate: #415A6B;
+
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--navy);
+    font-family: var(--body-font);
+}
+
+#pagewrap {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    
+}
+/*******************************************************************HEADER******************************/
+
+.header-div {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.header-div img {
+    width: 200px;
+    height: 200px;
+    margin: 1rem 0 0 0 ;
+    
+}
+
+.headliner {
+    font-size: 2.3rem;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.header-div p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-style: oblique;
+    text-align: center;
+    
+}
+
+/*************************************************HAMBURGER BUTTON********************/
+
+#ham-btn {
+    background: none;
+    color: var(--navy);
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    padding-right: 1rem;
+    
+}
+
+#ham-btn::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+#ham-btn.show::before {
+    content: "X";
+}
+
+/************************************************NAVBAR*************************************/
+
+.navigation ul {
+   
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.navigation ul li {
+    
+    list-style-type: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.navigation ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-decoration: none;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.navigation ul li a:hover {
+    background-color: var(--navy);
+    color: white;
+    height: 100%;
+}
+
+.navigation ul li a.active {
+    background-color: var(--navy);
+    color: white;
+}
+
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul li a::before {
+    content: none;
+   
+}
+
+.navigation ul li a.active::before {
+    content: "anchor";
+    font-family: "Material Symbols Outlined";
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+
+    font-variation-settings: 
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 5px;
+    
+}
+
+/*******************************************************HOME********************************************/
+
+main {
+    margin: 0 auto;
+}
+
+.hero-img, .hero-img img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+}
+
+.weather-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+.weather-card {
+    text-align: center;
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+
+
+}
+.weather-card h3 {
+    grid-column: 1/4;
+}
+.weather-icon {
+    display: none;
+}
+.time{
+    margin-left: 10px;
+}
+
+.description {
+    margin-right: 10px;
+}
+
+.weather-card h3 {
+    background-color: var(--navy);
+    color: white;
+    margin-top: 0;
+    padding: 1rem;
+    border-bottom: 5px solid var(--mint);
+}
+
+.time {
+    font-size: 1.7rem;
+}
+
+.temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.description {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-style: oblique;
+    text-wrap: pretty;
+}
+
+    
+/********************************************************FOOTER*****************************************/
+footer {
+    text-align: center;
+    background-color: var(--mint);
+    border-top: 5px solid var(--navy);
+}
