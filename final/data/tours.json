@@ -1,0 +1,122 @@
+{
+    "tours": [
+        {
+            "region": "Europe",
+            "title": "Beautiful British Isles",
+            "date": "June 1-10, 2026",
+            "details": "Explore England, Scotland, Ireland, and Northern Ireland by railway and bus on our popular Beautiful British Isles tour. Visit castles, captivating countryside, and ancient cities. You'll begin your journey in London and work your way north through Stratford, Liverpool, York, and Edinburgh, before heading west to explore Belfast and Dublin. Includes airfare, train fare, lodging, and 2 meals per day. Call for pricing.",
+            "img": "images/british-isles.webp"
+        },
+
+        {
+            "region": "Europe",
+            "title": "Romantic Paris",
+            "date": "June 1-8, 2026",
+            "details": "One of our most popular destinations is the most romantic city in the world! You'll explore Paris with a seasoned guide who will take you to some of the well-known tour spots and a few that are off the beaten path. There is something for everyone, whether you want shopping, history, culture, or night-life. Includes airfare, train fare, lodging and 2 meals per day. Call for pricing.",
+            "img": "images/paris.webp"
+        },
+
+        {
+            "region": "Europe",
+            "title": "Italian History and Culture",
+            "date": "June 7-19, 2026",
+            "details": "Explore historic Venice, Florence and Rome. Take a gondola ride, watch a Venetian glass-blowing demonstration, explore the Roman Colosseum and Catacombs, visit Vatican City and St. Peter's Basilica, and so much more. This is a tour not to be missed, and you'll see it all with an experienced guide who will both navigate and educate! Includeds airfare, train fare, lodging, and 2 meals per day. Call for pricing. Space is limited on this tour, so act quickly!",
+            "img": "images/italy.webp"
+        },
+
+        {
+            "region": "Africa & the Middle East",
+            "title": "Holy Land Tour",
+            "date": "July 12-23, 2026",
+            "details": "Take a guided tour through the Holy Land and visit ancient Christian sites in both Galilee and Jerusalem. You'll visit sites like the Sea of Galilee, Nazareth, Capernaum, Jerusalem's Old City, Bethlehem, and the Dead Sea. Includes airfare, lodging, and 2 meals per day. Call for pricing.",
+            "img": "images/holy-land.webp"
+
+        },
+        {
+            "region": "Africa & the Middle East",
+            "title": "Egypt and the Pyramids",
+            "date": "July 21-28, 2026",
+            "details": "This exciting and historical tour begins in Cairo and goes through Giza to see the famous Pyramids and the Sphinx. A short flight to Aswan will take you to the second half of your tour, where you'll enjoy a Nile Cruise from Aswan to Luxor. Includes airfare, boat fare, lodging, and 2 meals per day. Call for pricing.",
+            "img": "images/egypt.webp"
+        },
+        {
+            "region": "Europe",
+            "title": "Exotic Danube River Expedition",
+            "date":  "July 28-August 14, 2026",
+            "details": "This whirlwind of a tour will take you through Bulgaria, Croatia, Hungary, Serbia, Turkey, and Romania. You'll cruise the Danube River with plenty of stops to get off the boat for exploration and shopping. See the Hagia Sophia, explore the markets in Istanbul, and enjoy a land tour in Romania that will include the original Dracula castle! Includes airfare, boat fare, public transport fare, lodging, and 2 meals per day. Call for pricing.",
+            "img": "images/turkey.webp"
+        },
+
+        {
+            "region": "Asia",
+            "title": "Tokyo and Kyoto Sakura (Cherry Blossom) Tour",
+            "date": "March 27-April 10, 2027",
+            "details": "Our most popular Asian tour each year. Come see the most famous cherry blossoms in the world! Our tour will explore Tokyo and Kyoto to see Cherry blossoms and then we'll detour to Hiroshima and Miyajima Island. Includes airfair, train fare, lodging, and 2 meals per day. Call for pricing. Space is limited on this tour so act quickly!",
+            "img": "images/sakura.webp"
+        }, 
+
+        {
+            "region": "Oceania",
+            "title": "Australian Outback Walking Tour",
+            "date": "November 11 -20, 2026",
+            "details": "For the adventurer at heart, our guided walking tour through the Australian Outback is just the ticket. Our tour will explore Alice Springs, West MacDonnell Ranges, Serpentine Gorge, Ormiston Gorge, Kings Canyon, Kata Tjuta, and Uluru Base Walk. It is highly recommended that participants be in good physical condition. Includes airfare, ground transportation, hiking and camping gear, and 3 meals per day. Call for pricing.",
+            "img": "images/australia-outback.webp"
+        },
+
+        {
+            "region": "Oceania",
+            "title": "New Zealand Nature Lover Tour",
+            "date": "November 11 -20, 2026",
+            "details": "This trip includes Queenstown, Te Anau, Milford Sound, Mount Cook, Tekapo, and Christchurch. Pack your camera to capture some of the most beautiful scenery in the world. This tour includes a combination of ground transport and hiking, so it is recommended that participants be in good physical condition. Includes airfaire, ground transportation, lodging, hiking gear, and 3 meals per day. Call for pricing.",
+            "img": "images/new-zealand.webp"
+        },
+
+        {
+            "region": "Oceania",
+            "title": "Sensational Sydney",
+            "date": "November 18-27, 2026",
+            "details": "Explore beautiful Sydney, Australia and surrounding areas, including the Sydney Opera house, Darling Harbor, Barangaroo Cultural Precinct, a day trip to the Blue Mountains, Newtown, and Glebe. Includes airfare, bus transportation, lodging, and 2 meals per day. Call for pricing.",
+            "img": "images/sydney.webp"
+        },
+
+        {
+            "region": "Asia",
+            "title": "Thailand City and Beach Tour",
+            "date": "January 18-26, 2027",
+            "details": "This blend of city tour and beach vacation is the perfect Asian getaway. Explore Bangkok, Chiang Mai, Doi Suthep, and Phuket. Includes airfare, ground transportation, boat transportation, lodging, and 2 meals per day. Call for pricing.",
+            "img": "images/thailand.webp"
+        },
+
+        {
+            "region": "Europe",
+            "title": "European Christmas Market Tour",
+            "date": "November 30-Dec 10, 2026",
+            "details": "Visit some of the most magical holiday markets in Germany, Austria, and Switzerland. Enjoy festive markets, food, crafts, live music, shopping, and more. Our tour guide will take you through Munich, Nuremberg, Rothenburg Ob der Tauber, Vianna, Salzburg, and Zurich. Expect very cold temperatures and dress accordingly. There will be no refunds for inclement weather. Includes airfare, bus transportation, lodging, and 2 meals per day. Call for pricing. Space is limited on this tour so act quickly!",
+            "img": "images/christmas-market.webp"
+        },
+
+        {
+            "region": "North America",
+            "title": "Beautiful Banff",
+            "date": "May 26-June 3, 2027",
+            "details": "Banff National Park does not disappoint when it comes to scenery and wildlife. Explore the town of Banff as well as the park, and see extras like Lake Lousie, Moraine Lake, Yoho National Park, Kootenay National Park, and more. This trip includes several day hiking excursions and it is recommended that participants be in good physical condition. Includes airfare, ground transportation, lodging, hiking gear, and 3 meals per day. Call for pricing. Space is limited.",
+            "img": "images/banff.webp"
+        },
+
+        {
+            "region": "North America",
+            "title": "Canadian Railway Tour",
+            "date": "August 14-29, 2027",
+            "details": "This 14-day railway journey will take you through some of Canada's most breathtaking scenery. Our route takes us through Toronto, Ottowa, Montreal, Quebec City, Jasper, Banff, and Vancouver. Includes railway fare, lodging, and 3 meals per day. Call for pricing. Space is very limited, so act quickly.",
+            "img": "images/canada-rail.webp"
+        },
+        {
+            "region": "North America",
+            "title": "Sensational Southwest National Parks",
+            "date": "September 14-21, 2027",
+            "details": "See Bryce Canyon, Zion, and Arches National Parks before heading south to the Grand Canyon National Park. This is a hike-heavy excursion, so it is recommended that participants be in good physical shape. Includes airfare, lodging, ground transportation, park admission, and 3 meals per day. Call for pricing.",
+            "img": "images/arches.webp"
+        }
+
+    ]
+}
