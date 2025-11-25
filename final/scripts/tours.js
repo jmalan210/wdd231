@@ -50,11 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (allTours) {
         allTours.sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()));
         createCards(allTours);
-        
-        // const selectMenu = document.getElementById('region-select');
-        // selectMenu.addEventListener('change', () => {
-        //     filterTours(selectMenu.value);
-        // });
+    
     }
 });
 

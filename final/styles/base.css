@@ -280,6 +280,7 @@ main {
         display: none;
         z-index: 10;
         scrollbar-width: none;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
     }
 
     .custom-option {
@@ -304,42 +305,7 @@ main {
         display: block;
     }
 
-    /* #region-select {
-        font-family: var(--body-font);
-        font-size: 1rem;
-        padding: 8px 12px;
-        border: 2px solid var(--navy);
-        border-radius: 10px;
-        cursor: pointer;
-        transition: all 0.2 ease-in-out;
-        min-width: 220px;
-        appearance: none;
-        background-image: url('../images/expand-circle-down.svg');
-        background-repeat: no-repeat;
-        background-position: right 12px center;
-        background-size: 16px 16px;
-        padding-right: 40px;
-        
-    }
-
-    #region-select:hover {
-        border-color: var(--mint);
-        box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    }
-
-    #region-select:focus {
-        outline: none;
-        border-color: var(--mint);
-        background-color: white;
-        box-shadow: 0 0 5px rgba(26,79,120,0.5);
-    }
-
-
-    .select-container {
-        text-align: center;
-        margin-bottom: 1rem;
-    } */
-
+    
     #tour-cards {
         display: flex;
         flex-direction: row;
