@@ -348,6 +348,23 @@ main {
         margin: .7rem;
         font-style: oblique;
     }
+
+/***MODAL STYLING***/
+
+.tour-details {
+    max-width: 600px;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--navy);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+
+}
+
 /********************************************************FOOTER*****************************************/
 footer {
     text-align: center;
