@@ -324,6 +324,11 @@ main {
         
     }
 
+    .tour-card:hover {
+        border: 5px solid var(--navy);
+        background-color: #A8E6CF40;
+    }
+
     .tour-card h3 {
         background-color: var(--navy);
         color: white;
@@ -364,6 +369,74 @@ main {
     position: relative;
 
 }
+
+.tour-details[open] {
+    animation: modalFadeDown 0.5s ease-out forwards;
+}
+
+.tour-details.closing {
+    animation: modalFadeUp 0.5s ease-in forwards;
+}
+
+.tour-details::backdrop {
+    background: rgba(0,0,0,0.6);
+}
+
+.tour-details h3 {
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem;
+    background-color: var(--navy);
+    color: white;
+   
+}
+
+.tour-details img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--mint);
+    color: var(--navy);
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-modal:hover {
+    background-color: var(--light-blue);
+}
+
+@keyframes modalFadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+@keyframes modalFadeUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    }
+    
+
 
 /********************************************************FOOTER*****************************************/
 footer {

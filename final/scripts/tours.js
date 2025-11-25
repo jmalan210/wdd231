@@ -28,7 +28,16 @@ modal.innerHTML = `
 <p id="modal-details"></p>
 `;
 document.body.appendChild(modal);
-modal.querySelector('.close-modal').addEventListener('click', () => modal.close());
+
+modal.querySelector('.close-modal').addEventListener('click', () => {
+    modal.classList.add('closing');
+    modal.addEventListener('animationend', () => {
+        modal.classList.remove('closing');
+        modal.close();
+    }, {once: true })
+    
+    
+});
 
     
 function createCards(tours) {
