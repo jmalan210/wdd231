@@ -73,6 +73,16 @@ footer {
    
 }
 
+.tour-card {
+    width: 350px;
+}
+
+.tour-card:hover {
+        border: 5px solid var(--navy);
+        background-color: #A8E6CF40;
+        scale: 1.03;
+    }
+
 footer img {
     margin-top: 1rem;
 }
