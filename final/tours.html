@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/tours.js" defer></script>
 
 </head>
 <body>
@@ -46,14 +47,32 @@
         </nav>
     </header>
     <main>
-        <div>
-        <button id="all-tours" class="location-button" aria-label="location button">All Tours</button>
-        <button id="africa" class="location-button" aria-label="location button">Africa & Middle East</button>
-        <button id="asia" class="location-button" aria-label="location button">Asia</button>
-        <button id="europe" class="location-button" aria-label="location button">Europe</button>
-        <button id="north-america" class="location-button" aria-label="location button">North America</button>
-        <button id="oceania" class="location-button" aria-label="location button">Oceania</button>
-        </div>
+        <h2>Tours Currently Available</h2>
+        <!-- <div class="select-container">
+        <label for="region-select">Choose a Region:</label>
+        <select name="tour-filter" id="region-select">
+        <option value="all">All Tours</option>
+        <option value="africa & the middle east">Africa & Middle East</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="north america">North America</option>
+        <option value="oceania">Oceania</option>
+        </select>
+        </div> -->
+        <div class="custom-select-div">
+            <div class="custom-select">
+            <div class="custom-select-trigger">Choose a Region</div>
+            <div class="custom-options">
+                <span class="custom-option selected" data-value="all">All Tours</span>
+                <span class="custom-option" data-value="africa & the middle east">Africa & the Middle East</span>
+                <span class="custom-option" data-value="asia">Asia</span>
+                <span class="custom-option" data-value="europe">Europe</span>
+                <span class="custom-option" data-value="north america">North America</span>
+                <span class="custom-option" data-value="oceania">Oceania</span>
+            </div>
+            </div>
+            </div>
+
         <div id="tour-cards"></div>
     </main>
     <footer>

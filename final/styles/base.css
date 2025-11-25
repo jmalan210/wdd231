@@ -233,7 +233,155 @@ main {
     text-wrap: pretty;
 }
 
+/*******************************************************TOURS******************************************/
+    h2 {
+        text-align: center;
+    }
+
+    .custom-select-div {
+        position: relative;
+        width: 220px;
+        margin: 20px auto;
+        
+    }
+
+    .custom-select {
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .custom-select-trigger {
+        background-color: #fff;
+        border: 2px solid var(--navy);
+        border-radius: 10px;
+        padding: 10px 14px;
+        color: var(--navy);
+        font-size: 1rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .custom-select-trigger:hover {
+        border-color: var(--mint);
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .custom-options {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border: 2px solid var(--navy);
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+        max-height: none;
+        overflow-y: auto;
+        display: none;
+        z-index: 10;
+        scrollbar-width: none;
+    }
+
+    .custom-option {
+        display: block;
+        padding: 10px 14px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .custom-option:hover {
+        background-color: var(--mint);
+        color: var(--navy);
+    }
+
+    .custom-option.selected {
+        background-color: var(--mint);
+        font-weight: bold;
+
+    }
+
+    .custom-select.open .custom-options {
+        display: block;
+    }
+
+    /* #region-select {
+        font-family: var(--body-font);
+        font-size: 1rem;
+        padding: 8px 12px;
+        border: 2px solid var(--navy);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2 ease-in-out;
+        min-width: 220px;
+        appearance: none;
+        background-image: url('../images/expand-circle-down.svg');
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 16px 16px;
+        padding-right: 40px;
+        
+    }
+
+    #region-select:hover {
+        border-color: var(--mint);
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    #region-select:focus {
+        outline: none;
+        border-color: var(--mint);
+        background-color: white;
+        box-shadow: 0 0 5px rgba(26,79,120,0.5);
+    }
+
+
+    .select-container {
+        text-align: center;
+        margin-bottom: 1rem;
+    } */
+
+    #tour-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        }
     
+    .tour-card {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        border: 3px solid var(--navy);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        
+    }
+
+    .tour-card h3 {
+        background-color: var(--navy);
+        color: white;
+        width: 100%;
+        margin: 0;
+        padding: .5rem;
+        border-bottom: 5px solid var(--mint);
+    }
+
+    .tour-card img{
+       
+        margin: .7rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .tour-card p {
+        margin: .7rem;
+    }
+
+    .date {
+        margin: .7rem;
+        font-style: oblique;
+    }
 /********************************************************FOOTER*****************************************/
 footer {
     text-align: center;

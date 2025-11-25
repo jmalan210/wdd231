@@ -1,16 +1,34 @@
 
 async function loadCities() {
-    const res = await fetch('data/cities.json');
-    const data = await res.json();
-    return data.cities;
-    
-}
+    try {
+        const res = await fetch('data/cities.json');
+        if (res.ok) {
+            const data = await res.json();
+            return data.cities;
+        } else {
+            throw Error(await res.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
+    }
 
 async function getWeather(city) {
     const apiKey = "32bfdba08ef4a392fea32e0cad0a8e2d";
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${city.lat}&lon=${city.lon}&appid=${apiKey}&units=imperial`;
-    const res = await fetch(url);
-    return await res.json();
+    try {
+        const res = await fetch(url);
+        if (res.ok) {
+            return await res.json();
+        }
+        else {
+            throw Error(await res.text());
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
 }
 
 function getLocalTime(timeZone) {
