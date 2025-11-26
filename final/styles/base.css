@@ -409,8 +409,68 @@ main {
 }
 
 .guide-div {
-    width: 600px;
-    
+    width: 800px;
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+    background-color: #A8E6CF40;
+    display: grid;
+    grid-template-areas: 
+    "image name"
+    "image regions"
+    "image bio"
+    ;
+
+}
+
+.guide-div:nth-child(odd){
+    grid-template-areas: 
+    "name image"
+    "regions image"
+    "bio image"
+    ;
+
+
+}
+
+.guide-div img {
+    grid-area: image;
+    width: 200px; 
+    overflow: hidden;
+    margin: .5rem;
+    border-radius: 10px;
+   
+}
+
+.guide-div h3 {
+   
+    grid-area: name;
+    text-align: center;
+    background-color: var(--navy);
+    color: white;
+    align-content: center;
+    margin: 1rem 2rem;
+    border-radius: 10px 10px 0 0 ;
+    border-bottom: 5px solid var(--mint);
+    padding: 0;
+}
+
+.reg-served {
+    grid-area: regions;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+   
+    margin: 0 2rem;
+}
+
+.bio {
+    grid-area: bio;
+    text-align: justify;
+    margin: 0 2rem;
+    padding: 0;
+   
 }
 /********************************************************FOOTER*****************************************/
 footer {
