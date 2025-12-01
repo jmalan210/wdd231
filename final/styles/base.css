@@ -438,7 +438,7 @@ main {
     overflow: hidden;
     margin: .5rem;
     border-radius: 10px;
-   
+   border: 1px solid var(--navy);
 }
 
 .guide-div h3 {
