@@ -472,6 +472,34 @@ main {
     padding: 0;
    
 }
+
+/********************************************************INFO PAGE***************************************/
+
+#info-div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    display: block;
+}
+
+form button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.question {
+    font-weight: bold;
+}
+
+
 /********************************************************FOOTER*****************************************/
 footer {
     text-align: center;
