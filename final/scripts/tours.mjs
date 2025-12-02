@@ -31,6 +31,17 @@ function openModal(tour) {
     img.alt = tour.title;
     document.getElementById('modal-details').textContent = tour.details;
     modal.showModal();
+    recordOpenedModal(tour.title);
+}
+
+function recordOpenedModal(title) {
+    console.log("recordOpenedModal called with:", title);
+    const opened = JSON.parse(localStorage.getItem("openedModals") || '[]');
+    if (!opened.includes(title)) {
+        opened.push(title);
+        localStorage.setItem("openedModals", JSON.stringify(opened));
+       
+    }
 }
 
     
@@ -45,7 +56,7 @@ function createCards(tours) {
         card.innerHTML = `
         <h3>${tour.title}</h3>
         <p class="date">${tour.date}</p>
-        <img src="${tour.img}" alt="${tour.title}">
+        <img src="${tour.img}" alt="${tour.title}" loading="lazy">
         `;
         
         card.addEventListener('click', () => openModal(tour)); 

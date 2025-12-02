@@ -48,36 +48,36 @@
     </header>
     <main>
         <div id="info-div">
-        <form action="info">
+        <form method="GET" action="thankyou.html" >
             <fieldset>
-                <legend>Contact Us!</legend>
+                <legend>Get More Information</legend>
                 <label for="firstname">First Name*</label>
-                <input type="text" id="firstname" required>
+                <input type="text" id="firstname" name="firstname" required>
                 <label for="lastname">Last Name:*</label>
-                <input type="text" id="lastname" required>
+                <input type="text" id="lastname" name="lastname" required>
                 <label for="email">E-Mail Address:*</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" required>
                 <label for="phonenumber">Phone Number:*</label>
-                <input type="tel" id="phonenumber" required>
+                <input type="tel" id="phonenumber" name="phonenumber" required>
                 <label for="interest">Which tour are you interested in?:</label>
-                <select name="interest" id="interest">
-                    <option value="tour" id="tour" selected disabled>Select One</option>
+                <select name="interest" id="interest" required>
+                    <option value="" selected disabled>Select One</option>
                 </select>
-                <label for="newsletter">Subscribe to our newsletter</label>
-                <input type="checkbox">
+                <label for="newsletter" id="newsletter"><input type="checkbox" id="checkbox">Subscribe to our newsletter</label>
+                
                 <button id="form-button" aria-label="contact button">Contact Us</button>
 
             </fieldset>
         </form>
-        <div>
+        <div class="faq">
             <h3>Frequently Asked Questions</h3>
             <p class="question">My plans have changed. Can I get a refund on my trip?</p>
-            <p class="answer">All trip costs include a $1000 non-refundable deposit.  If the trip is more than 90 days away, you can get a full refund of your trip cost, minus the deposit. If the trip is 45-90 days away, you can get 50% of the cost back, minus the deposit. We are unable to process refunds on trips that are sooner than 45 days away. If you purchased our True North Travel Protection Plan, you can get a full refund for your trip, minus the deposit, at any time up to the day the tour begins.</p>
+            <p class="answer">All trip costs include a $1000 non-refundable deposit. If you purchased our True North Travel Protection Plan, you can get a full refund for your trip, minus the deposit, at any time up to the day the tour begins. For trips more than 90 days away, you can get a full refund of your trip cost, minus the deposit. For trips 45-90 days away, you can get 50% of the cost back, minus the deposit. We are unable to process refunds on trips that are sooner than 45 days away. </p>
             <p class="question">Are children allowed on your tours?</p>
             <p class="answer">Yes, children ages 8+ are welcome on our tours with a few exceptions. We ask that parents be responsible for their child at all times and be considerate of other tour patrons. If you are traveling internationally, even within the North American continent (for example, from the US to Canada), your child will require their own passport. </p>
             <p class="question">Can I bring my pet on the tour?</p>
             <p class="answer">No, pets and emotional support animals are not allowed on our tours. No exceptions. If you require a service animal, please contact us at (123) 456-7890 to make arrangements. </p>
-            <p class="question">You aren't offering any tours to the place I want to go. How can I find out about future tour offerings?</p>
+            <p class="question"> How can I find out about future tour offerings?</p>
             <p class="answer">Tour availability depends on a number of factors, and our tour offerings change all the time. Consider signing up for our newsletter or following us on social media to get the latest information about new tours.</p>
         </div>
         </div>

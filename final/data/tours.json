@@ -26,7 +26,7 @@
 
         {
             "region": "Africa & the Middle East",
-            "title": "Holy Land Tour",
+            "title": "Holy Land",
             "date": "July 12-23, 2026",
             "details": "Take a guided tour through the Holy Land and visit ancient Christian sites in both Galilee and Jerusalem. You'll visit sites like the Sea of Galilee, Nazareth, Capernaum, Jerusalem's Old City, Bethlehem, and the Dead Sea. Includes airfare, lodging, and 2 meals per day. Call for pricing.",
             "img": "images/holy-land.webp"
@@ -41,7 +41,7 @@
         },
         {
             "region": "Europe",
-            "title": "Exotic Danube River Expedition",
+            "title": "Exotic Danube River",
             "date":  "July 28-August 14, 2026",
             "details": "This whirlwind of a tour will take you through Bulgaria, Croatia, Hungary, Serbia, Turkey, and Romania. You'll cruise the Danube River with plenty of stops to get off the boat for exploration and shopping. See the Hagia Sophia, explore the markets in Istanbul, and enjoy a land tour in Romania that will include the original Dracula castle! Includes airfare, boat fare, public transport fare, lodging, and 2 meals per day. Call for pricing.",
             "img": "images/turkey.webp"
@@ -49,7 +49,7 @@
 
         {
             "region": "Asia",
-            "title": "Tokyo and Kyoto Sakura Tour",
+            "title": "Tokyo and Kyoto Sakura",
             "date": "March 27-April 10, 2027",
             "details": "Our most popular Asian tour each year. Come see the most famous cherry blossoms in the world! Our tour will explore Tokyo and Kyoto to see Cherry blossoms and then we'll detour to Hiroshima and Miyajima Island. Includes airfair, train fare, lodging, and 2 meals per day. Call for pricing. Space is limited on this tour so act quickly!",
             "img": "images/sakura.webp"
@@ -57,7 +57,7 @@
 
         {
             "region": "Oceania",
-            "title": "Australian Outback Walking Tour",
+            "title": "Australian Walkabout",
             "date": "November 11 -20, 2026",
             "details": "For the adventurer at heart, our guided walking tour through the Australian Outback is just the ticket. Our tour will explore Alice Springs, West MacDonnell Ranges, Serpentine Gorge, Ormiston Gorge, Kings Canyon, Kata Tjuta, and Uluru Base Walk. It is highly recommended that participants be in good physical condition. Includes airfare, ground transportation, hiking and camping gear, and 3 meals per day. Call for pricing.",
             "img": "images/australia-outback.webp"
@@ -65,7 +65,7 @@
 
         {
             "region": "Oceania",
-            "title": "New Zealand Nature Lover Tour",
+            "title": "New Zealand Nature Lover",
             "date": "November 11 -20, 2026",
             "details": "This trip includes Queenstown, Te Anau, Milford Sound, Mount Cook, Tekapo, and Christchurch. Pack your camera to capture some of the most beautiful scenery in the world. This tour includes a combination of ground transport and hiking, so it is recommended that participants be in good physical condition. Includes airfaire, ground transportation, lodging, hiking gear, and 3 meals per day. Call for pricing.",
             "img": "images/new-zealand.webp"
@@ -81,7 +81,7 @@
 
         {
             "region": "Asia",
-            "title": "Thailand City and Beach Tour",
+            "title": "Thailand City and Beach",
             "date": "January 18-26, 2027",
             "details": "This blend of city tour and beach vacation is the perfect Asian getaway. Explore Bangkok, Chiang Mai, Doi Suthep, and Phuket. Includes airfare, ground transportation, boat transportation, lodging, and 2 meals per day. Call for pricing.",
             "img": "images/thailand.webp"
@@ -89,7 +89,7 @@
 
         {
             "region": "Europe",
-            "title": "European Christmas Market Tour",
+            "title": "European Christmas Markets",
             "date": "November 30-Dec 10, 2026",
             "details": "Visit some of the most magical holiday markets in Germany, Austria, and Switzerland. Enjoy festive markets, food, crafts, live music, shopping, and more. Our tour guide will take you through Munich, Nuremberg, Rothenburg Ob der Tauber, Vianna, Salzburg, and Zurich. Expect very cold temperatures and dress accordingly. There will be no refunds for inclement weather. Includes airfare, bus transportation, lodging, and 2 meals per day. Call for pricing. Space is limited on this tour so act quickly!",
             "img": "images/christmas-market.webp"
@@ -105,14 +105,14 @@
 
         {
             "region": "North America",
-            "title": "Canadian Railway Tour",
+            "title": "Canadian Railway",
             "date": "August 14-29, 2027",
             "details": "This 14-day railway journey will take you through some of Canada's most breathtaking scenery. Our route takes us through Toronto, Ottowa, Montreal, Quebec City, Jasper, Banff, and Vancouver. Includes railway fare, lodging, and 3 meals per day. Call for pricing. Space is very limited, so act quickly.",
             "img": "images/canada-rail.webp"
         },
         {
             "region": "North America",
-            "title": "Sensational Southwest National Parks",
+            "title": "Southwest National Parks",
             "date": "September 14-21, 2027",
             "details": "See Bryce Canyon, Zion, and Arches National Parks before heading south to the Grand Canyon National Park. This is a hike-heavy excursion, so it is recommended that participants be in good physical shape. Includes airfare, lodging, ground transportation, park admission, and 3 meals per day. Call for pricing.",
             "img": "images/arches.webp"

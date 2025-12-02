@@ -83,6 +83,34 @@ footer {
         scale: 1.03;
     }
 
+.guide-div {
+     grid-template-areas: 
+    "image name"
+    "image regions"
+    "image bio"
+    ;
+
+}
+
+.guide-div:nth-child(odd){
+    grid-template-areas: 
+    "name image"
+    "regions image"
+    "bio image"
+    ;
+
+
+}
+
+.guide-div img {
+    margin: 5px;
+}
+
+.guide-div h3 {
+    margin: 5px;
+    border-radius: 10px 10px 0 0 ;
+}
+
 footer img {
     margin-top: 1rem;
 }

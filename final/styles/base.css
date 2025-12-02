@@ -413,30 +413,26 @@ main {
     border: 3px solid var(--navy);
     border-radius: 10px;
     background-color: #A8E6CF40;
+    margin: 5px;
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-areas: 
-    "image name"
-    "image regions"
-    "image bio"
+    "name"
+    "image"
+    "regions"
+    "bio"
     ;
 
 }
 
-.guide-div:nth-child(odd){
-    grid-template-areas: 
-    "name image"
-    "regions image"
-    "bio image"
-    ;
 
-
-}
 
 .guide-div img {
+    justify-self: center;
     grid-area: image;
     width: 200px; 
     overflow: hidden;
-    margin: .5rem;
     border-radius: 10px;
    border: 1px solid var(--navy);
 }
@@ -448,10 +444,9 @@ main {
     background-color: var(--navy);
     color: white;
     align-content: center;
-    margin: 1rem 2rem;
-    border-radius: 10px 10px 0 0 ;
     border-bottom: 5px solid var(--mint);
-    padding: 0;
+    padding: 5px;
+    margin-top: 0;
 }
 
 .reg-served {
@@ -461,15 +456,15 @@ main {
     font-weight: bold;
     margin: 0;
     padding: 0;
-   
-    margin: 0 2rem;
+    margin: 5px 0;
 }
 
 .bio {
     grid-area: bio;
     text-align: justify;
-    margin: 0 2rem;
+    margin: 0 10px 10px 10px;
     padding: 0;
+
    
 }
 
@@ -477,28 +472,126 @@ main {
 
 #info-div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1rem;
 
 }
 
 form {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
+
+fieldset {
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+    background-color: #A8E6CF40;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 300px;
+    overflow: hidden;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 form label {
     display: block;
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 2px solid var(--mint);
+    border-radius: 5px;
+}
+
+:required:hover {
+    border: 2px solid darkred;
+    background-color: rgb(245, 240, 239);
+}
+
+select {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid var(--mint);
+    border-radius: 5px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+#checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+   
 }
 
 form button {
     display: block;
     width: 50%;
     margin: 0 auto;
+    border: none;
+    background-color: var(--navy);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.faq h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#info-div p {
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .question {
     font-weight: bold;
 }
 
+/********************************************************THANKS PAGE************************************/
+
+#centering-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+#thanks-div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #A8E6CF40;
+    margin:0 auto;
+    border: 3px solid var(--navy);
+    border-radius: 10px;
+    padding: 1rem;
+     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
 
 /********************************************************FOOTER*****************************************/
 footer {
