@@ -1,4 +1,4 @@
-import { loadTours } from "./loadTours.mjs";
+import { loadTours } from "./loadtours.mjs";
 let allTours = [];
 
 
