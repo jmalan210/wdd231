@@ -526,15 +526,9 @@ select {
     border-radius: 5px;
 }
 
+
+
 #newsletter {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-
-}
-
-#checkbox {
     width: 24px;
     height: 24px;
     margin-right: 10px;
